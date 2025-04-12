@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: e2ee0fc157e973a49a3f1011f900cc48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2549783186506505441
+    second: CoalRunArmsSmgSpritesheet_0
+  - first:
+      213: -6131955011174393596
+    second: CoalRunArmsSmgSpritesheet_1
+  - first:
+      213: 7533429576189756533
+    second: CoalRunArmsSmgSpritesheet_2
+  - first:
+      213: 4405990952894964560
+    second: CoalRunArmsSmgSpritesheet_3
+  - first:
+      213: 5209601158523546730
+    second: CoalRunArmsSmgSpritesheet_4
+  - first:
+      213: -1520634900612428041
+    second: CoalRunArmsSmgSpritesheet_5
+  - first:
+      213: -9095801396218690361
+    second: CoalRunArmsSmgSpritesheet_6
+  - first:
+      213: -8075726613685943773
+    second: CoalRunArmsSmgSpritesheet_7
+  - first:
+      213: 1186051035313668088
+    second: CoalRunArmsSmgSpritesheet_8
+  - first:
+      213: 5166408316840800686
+    second: CoalRunArmsSmgSpritesheet_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CoalRunArmsSmgSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 464
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13240283b95d9cd0800000000000000
+      internalID: -2549783186506505441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsSmgSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 464
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4091644e76be6eaa0800000000000000
+      internalID: -6131955011174393596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsSmgSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 464
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5744635294e1c8860800000000000000
+      internalID: 7533429576189756533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsSmgSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 464
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053a3ee7d69352d30800000000000000
+      internalID: 4405990952894964560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsSmgSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c624be6a83c4840800000000000000
+      internalID: 5209601158523546730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsSmgSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 232
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe4fe35d9e95eae0800000000000000
+      internalID: -1520634900612428041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsSmgSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 232
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c402ee52d835c180800000000000000
+      internalID: -9095801396218690361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsSmgSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 232
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322c4109e614def80800000000000000
+      internalID: -8075726613685943773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsSmgSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fffa55f123b57010800000000000000
+      internalID: 1186051035313668088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsSmgSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea17be9cdf4c2b740800000000000000
+      internalID: 5166408316840800686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3addbeb80af4ae6478508a57cff11d51
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CoalRunArmsSmgSpritesheet_0: -2549783186506505441
+      CoalRunArmsSmgSpritesheet_1: -6131955011174393596
+      CoalRunArmsSmgSpritesheet_2: 7533429576189756533
+      CoalRunArmsSmgSpritesheet_3: 4405990952894964560
+      CoalRunArmsSmgSpritesheet_4: 5209601158523546730
+      CoalRunArmsSmgSpritesheet_5: -1520634900612428041
+      CoalRunArmsSmgSpritesheet_6: -9095801396218690361
+      CoalRunArmsSmgSpritesheet_7: -8075726613685943773
+      CoalRunArmsSmgSpritesheet_8: 1186051035313668088
+      CoalRunArmsSmgSpritesheet_9: 5166408316840800686
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
