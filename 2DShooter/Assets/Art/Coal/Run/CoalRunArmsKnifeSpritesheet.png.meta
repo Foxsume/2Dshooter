@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: faca96df13467cf42a441ea3344dad0c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1235767401002805982
+    second: CoalRunArmsKnifeSpritesheet_0
+  - first:
+      213: -6879931925190597793
+    second: CoalRunArmsKnifeSpritesheet_1
+  - first:
+      213: 9154527350526107095
+    second: CoalRunArmsKnifeSpritesheet_2
+  - first:
+      213: -3687880291233537224
+    second: CoalRunArmsKnifeSpritesheet_3
+  - first:
+      213: 1002777250798979298
+    second: CoalRunArmsKnifeSpritesheet_4
+  - first:
+      213: 5259618648305548905
+    second: CoalRunArmsKnifeSpritesheet_5
+  - first:
+      213: -4037178177967933507
+    second: CoalRunArmsKnifeSpritesheet_6
+  - first:
+      213: -6985096852263124420
+    second: CoalRunArmsKnifeSpritesheet_7
+  - first:
+      213: 3055120539210489202
+    second: CoalRunArmsKnifeSpritesheet_8
+  - first:
+      213: -6863497398420301338
+    second: CoalRunArmsKnifeSpritesheet_9
+  - first:
+      213: 1246504853257429356
+    second: CoalRunArmsKnifeSpritesheet_10
+  - first:
+      213: 6800334838767410612
+    second: CoalRunArmsKnifeSpritesheet_11
+  - first:
+      213: 1587249802794760340
+    second: CoalRunArmsKnifeSpritesheet_12
+  - first:
+      213: -6970626221492044416
+    second: CoalRunArmsKnifeSpritesheet_13
+  - first:
+      213: -9064853894338578399
+    second: CoalRunArmsKnifeSpritesheet_14
+  - first:
+      213: 452392281080617873
+    second: CoalRunArmsKnifeSpritesheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CoalRunArmsKnifeSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 464
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edaa7c167e3562110800000000000000
+      internalID: 1235767401002805982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsKnifeSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 464
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5325209d529580a0800000000000000
+      internalID: -6879931925190597793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsKnifeSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 464
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddd4be5f1a6b0f70800000000000000
+      internalID: 9154527350526107095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsKnifeSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 464
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8336cd21a6402dcc0800000000000000
+      internalID: -3687880291233537224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsKnifeSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e847beb8949aed00800000000000000
+      internalID: 1002777250798979298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsKnifeSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 232
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96eb5424b4bedf840800000000000000
+      internalID: 5259618648305548905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsKnifeSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 232
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7334746df09f7c0800000000000000
+      internalID: -4037178177967933507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsKnifeSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 232
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c324827eb63ff0f90800000000000000
+      internalID: -6985096852263124420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsKnifeSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d14a591f7f56a20800000000000000
+      internalID: 3055120539210489202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalRunArmsKnifeSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.46153846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e917520b75ffb0a0800000000000000
+      internalID: -6863497398420301338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6fac337d4fec9244b8fc5aa73b66864a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CoalRunArmsKnifeSpritesheet_0: 1235767401002805982
+      CoalRunArmsKnifeSpritesheet_1: -6879931925190597793
+      CoalRunArmsKnifeSpritesheet_2: 9154527350526107095
+      CoalRunArmsKnifeSpritesheet_3: -3687880291233537224
+      CoalRunArmsKnifeSpritesheet_4: 1002777250798979298
+      CoalRunArmsKnifeSpritesheet_5: 5259618648305548905
+      CoalRunArmsKnifeSpritesheet_6: -4037178177967933507
+      CoalRunArmsKnifeSpritesheet_7: -6985096852263124420
+      CoalRunArmsKnifeSpritesheet_8: 3055120539210489202
+      CoalRunArmsKnifeSpritesheet_9: -6863497398420301338
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

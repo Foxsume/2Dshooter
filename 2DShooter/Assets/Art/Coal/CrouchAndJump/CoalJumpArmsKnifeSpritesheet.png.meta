@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: 065eb2afedc52a44ba18c18d4d6dcdfe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 871628935659712462
+    second: CoalJumpArmsKnifeSpritesheet_0
+  - first:
+      213: -632310233390267834
+    second: CoalJumpArmsKnifeSpritesheet_1
+  - first:
+      213: 5585473309116924859
+    second: CoalJumpArmsKnifeSpritesheet_2
+  - first:
+      213: -7157689080386068502
+    second: CoalJumpArmsKnifeSpritesheet_3
+  - first:
+      213: 4263739004216424167
+    second: CoalJumpArmsKnifeSpritesheet_4
+  - first:
+      213: 2940181618915786996
+    second: CoalJumpArmsKnifeSpritesheet_5
+  - first:
+      213: 4457898063418543193
+    second: CoalJumpArmsKnifeSpritesheet_6
+  - first:
+      213: 1173348954716733793
+    second: CoalJumpArmsKnifeSpritesheet_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CoalJumpArmsKnifeSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.43846154, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfe2fd16e5a81c00800000000000000
+      internalID: 871628935659712462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalJumpArmsKnifeSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 232
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.43846154, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642cdee51359937f0800000000000000
+      internalID: -632310233390267834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalJumpArmsKnifeSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.43846154, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb3075ca166938d40800000000000000
+      internalID: 5585473309116924859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoalJumpArmsKnifeSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 260
+        height: 232
+      alignment: 9
+      pivot: {x: 0.43846154, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef55e654b7caac90800000000000000
+      internalID: -7157689080386068502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 45d1f37b7f457724c909e24caa4f18ab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CoalJumpArmsKnifeSpritesheet_0: 871628935659712462
+      CoalJumpArmsKnifeSpritesheet_1: -632310233390267834
+      CoalJumpArmsKnifeSpritesheet_2: 5585473309116924859
+      CoalJumpArmsKnifeSpritesheet_3: -7157689080386068502
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
