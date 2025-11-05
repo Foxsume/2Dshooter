@@ -1,21 +1,31 @@
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public abstract class Weapon : MonoBehaviour
 {
-    public Transform bulletSpawner;
-    public GameObject bulletPrefab;
+    protected string weaponName;
+    protected WeaponType Type;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (UserInput.instance.Attack)
-        {
-            Shoot();
-        }
-    }
+    protected int maxAmmo;
+    protected int currentAmmo;
+    protected int reserveAmmo;
+    protected float reloadTime;
 
-    void Shoot ()
-    {
-        Instantiate(bulletPrefab, bulletSpawner.position, bulletSpawner.rotation);
-    }
+    public bool isAutomatic;
+
+
+    // Common interface
+    public abstract void StartFire();
+    public abstract void ContinueFire();
+    public abstract void StopFire();
+
+    // Virtual reaload so melee can ignore
+    public virtual void Reload() { }
+    public virtual bool CanReload() => false;
+}
+
+public enum WeaponType
+{
+    Primary,
+    Secondary,
+    Melee
 }

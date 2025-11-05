@@ -117,7 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -142,101 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ButtonDefaultBind
+      name: ToggleOnSprite
       rect:
         serializedVersion: 2
-        x: 16
-        y: 831
-        width: 256
-        height: 233
-      alignment: 9
-      pivot: {x: 0.5, y: 0.44}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26616dc11654bbbd0800000000000000
-      internalID: -2613418875360504222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ButtonHoveredBind
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 831
-        width: 256
-        height: 233
-      alignment: 9
-      pivot: {x: 0.5, y: 0.44}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9d196a6c5b043350800000000000000
-      internalID: 5995429495487143325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ButtonDefaultToggle
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 831
-        width: 201
-        height: 201
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d1846d67d8d8f7b50800000000000000
-      internalID: 6593144018217355293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ButtonHoveredToggle
-      rect:
-        serializedVersion: 2
-        x: 777
-        y: 831
-        width: 201
-        height: 201
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3dd7cd1f831c15fd0800000000000000
-      internalID: -2354888679817970221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MenuSprites_4
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 831
-        width: 201
-        height: 201
+        x: 1047
+        y: 607
+        width: 134
+        height: 103
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,15 +164,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuSprites_5
+      name: MenuButton
       rect:
         serializedVersion: 2
-        x: 1211
-        y: 831
-        width: 201
-        height: 201
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 16
+        y: 260
+        width: 531
+        height: 262
+      alignment: 9
+      pivot: {x: 0.53, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,122 +186,144 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ButtonToggleOff
-      rect:
-        serializedVersion: 2
-        x: 1455
-        y: 855
-        width: 153
-        height: 153
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e522f035e6975a310800000000000000
-      internalID: 1415671172624753246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ButtonToggleOn
-      rect:
-        serializedVersion: 2
-        x: 1686
-        y: 879
-        width: 134
-        height: 103
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1425bf08baa19600800000000000000
-      internalID: 473347143364846622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ButtonDefaultBig
+      name: BindButton
       rect:
         serializedVersion: 2
         x: 16
-        y: 540
-        width: 531
-        height: 262
+        y: 551
+        width: 256
+        height: 233
       alignment: 9
-      pivot: {x: 0.53, y: 0.44}
+      pivot: {x: 0.5, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 88e1455c2cef7fb40800000000000000
-      internalID: 5474123984579862152
+      spriteID: aa685d792c7a0d1409e0baf3f8445656
+      internalID: 1922627903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ButtonHoveredBig
+      name: BindButtonLighted
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 551
+        width: 256
+        height: 233
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d11a877f6523b14f9adfc96750f838b
+      internalID: -423281875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToggleButton
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 551
+        width: 201
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da4dc3714639e0419afcf782043ffd8
+      internalID: -470703921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToggleButtonLighted
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 551
+        width: 201
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6b4a461fb7b7d44ac89536569fa908
+      internalID: -83899112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonLighted
       rect:
         serializedVersion: 2
         x: 564
-        y: 540
+        y: 260
         width: 531
         height: 262
       alignment: 9
-      pivot: {x: 0.53, y: 0.44}
+      pivot: {x: 0.53, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 285656fb776abe4e0800000000000000
-      internalID: -1951282980292565630
+      spriteID: 281e9d739e58b92458310e9ee077fc24
+      internalID: -1432870748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ButtonPressedBig
+      name: MenuButtonLighted2
       rect:
         serializedVersion: 2
         x: 1118
-        y: 540
+        y: 260
         width: 531
         height: 262
       alignment: 9
-      pivot: {x: 0.53, y: 0.44}
+      pivot: {x: 0.53, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 472438d9c7edc66a0800000000000000
-      internalID: -6454539539128827276
+      spriteID: 165ce05ad7d968243963c76d68bba870
+      internalID: 480122977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SliderBackground
+      name: SlideBackground
       rect:
         serializedVersion: 2
         x: 16
-        y: 458
-        width: 398
+        y: 178
+        width: 442
         height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -397,21 +331,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3525b6a73fbd07000800000000000000
-      internalID: 31767036168983123
+      spriteID: e8466bcd5e6e29242a7ee837b132014c
+      internalID: -494493174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SliderFill
+      name: SlideFill
       rect:
         serializedVersion: 2
         x: 19
-        y: 402
-        width: 392
+        y: 122
+        width: 424
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -419,20 +353,20 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 67a53f16482c0cd40800000000000000
-      internalID: 5602691810283706998
+      spriteID: 84ef490b178c7a740b607b47d52a02d8
+      internalID: -473434260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SliderHandleDefault
+      name: SlideHandle
       rect:
         serializedVersion: 2
-        x: 422
-        y: 400
+        x: 582
+        y: 120
         width: 40
         height: 52
       alignment: 0
@@ -441,20 +375,20 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5260aba3b69aa1920800000000000000
-      internalID: 2961865982961387045
+      spriteID: 55252722f4fba484b8df48921b5b295b
+      internalID: -574480104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SliderHandleHovered
+      name: SlideHandleLighted
       rect:
         serializedVersion: 2
-        x: 469
-        y: 400
+        x: 629
+        y: 120
         width: 40
         height: 52
       alignment: 0
@@ -463,10 +397,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 74afde99385640cd0800000000000000
-      internalID: -2592835869560931769
+      spriteID: f15c8d72a3a381d4c9ce5ec668a8c1f5
+      internalID: 355290483
       vertices: []
       indices: 
       edges: []
@@ -485,21 +419,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ButtonDefaultBig: 5474123984579862152
-      ButtonDefaultBind: -2613418875360504222
-      ButtonDefaultToggle: 6593144018217355293
-      ButtonHoveredBig: -1951282980292565630
-      ButtonHoveredBind: 5995429495487143325
-      ButtonHoveredToggle: -2354888679817970221
-      ButtonPressedBig: -6454539539128827276
-      ButtonToggleOff: 1415671172624753246
-      ButtonToggleOn: 473347143364846622
-      MenuSprites_4: 3682293953399461172
-      MenuSprites_5: 5189171612711109616
-      SliderBackground: 31767036168983123
-      SliderFill: 5602691810283706998
-      SliderHandleDefault: 2961865982961387045
-      SliderHandleHovered: -2592835869560931769
+      BindButton: 1922627903
+      BindButtonLighted: -423281875
+      MenuButton: 5189171612711109616
+      MenuButtonLighted: -1432870748
+      MenuButtonLighted2: 480122977
+      SlideBackground: -494493174
+      SlideFill: -473434260
+      SlideHandle: -574480104
+      SlideHandleLighted: 355290483
+      ToggleButton: -470703921
+      ToggleButtonLighted: -83899112
+      ToggleOnSprite: 3682293953399461172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

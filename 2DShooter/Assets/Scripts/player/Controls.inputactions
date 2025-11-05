@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "Controls",
     "maps": [
         {
@@ -42,7 +43,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Plummet",
+                    "name": "Plunge",
                     "type": "Button",
                     "id": "3d818f2f-b369-4409-915f-d4480de9ae11",
                     "expectedControlType": "",
@@ -87,9 +88,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Holster",
+                    "name": "Reload",
                     "type": "Button",
                     "id": "b11c434d-3d44-4563-bd52-9af08fa9a6ac",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Holster",
+                    "type": "Button",
+                    "id": "4887694a-795f-4965-ab51-342731a9699d",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -115,12 +125,12 @@
                 },
                 {
                     "name": "Move",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "8dd7b40a-ef7d-4897-98d5-35581e0331ca",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -219,7 +229,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard",
-                    "action": "Plummet",
+                    "action": "Plunge",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -230,7 +240,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Plummet",
+                    "action": "Plunge",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -329,13 +339,35 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard",
-                    "action": "Holster",
+                    "action": "Reload",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "2c07ab72-57b7-4fae-ba83-2346e869a91a",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Reload",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "34e699fb-565c-4a13-a06c-5d75b8b0b436",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Holster",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa295afa-2fe3-4672-b002-38290bd4d153",
                     "path": "<Gamepad>/dpad/down",
                     "interactions": "",
                     "processors": "",
@@ -398,28 +430,6 @@
                     "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "dea0ab58-5263-4469-8af4-175d8a3fffea",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "762aa42c-d43a-4531-9bbc-eb520f112407",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "left",
