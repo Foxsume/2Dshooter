@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -7,14 +6,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float walkSpeed;
     [SerializeField] private float sprintSpeed;
     [SerializeField] private float crouchSpeed;
-    [SerializeField] private float dashVelocity;
-    [SerializeField] private float dashTime;
-    [SerializeField] private float dashCooldown;
     private float xAxis = 0f;
-    private float defaultGravity;
-    private bool facingRight = true;
+    private int playerDir = 1;
     private bool wasCrouching = false;
-    private bool canDash = true;
+    [SerializeField] private float dashVelocity;
+    [SerializeField] private float dashDuration;
+    [SerializeField] private float dashCooldown;
+    private float dashTime;
+    private float dashCooldownTime;
     [Space(2)]
 
     [Header("MovementY")] // Jump, plummet
@@ -43,26 +42,42 @@ public class PlayerController : MonoBehaviour
         trailRend = GetComponent<TrailRenderer>();
     }
 
-    private void Start()
+    private void Update() // handles input/animations/cooldowns
     {
-        defaultGravity = rb.gravityScale;
-    }
+        // Dash cooldown
+        if (dashCooldownTime > 0) dashCooldownTime -= Time.deltaTime;
 
-    private void Update()
-    {
-        if (state.isDashing) return; // stops update function short if player is dashing
+        // Dash time
+        if (state.isDashing)
+        {
+            dashTime -= Time.deltaTime;
+
+            if (dashTime <= 0)
+            {
+                state.isDashing = false;
+            }
+            else return; // if dash hasn't ended -> early return
+        }
 
         Move(); // Updates xAxis value and flips player
         Crouch();
-        Jump();
         Dash();
+        Jump();
         Falling();
     }
 
-    private void FixedUpdate()
+    private void FixedUpdate() // applies velocity
     {
-        rb.linearVelocityX = xAxis;
+        // horizontal(x) velocities
+        if (state.isDashing)
+        {
+            rb.linearVelocity = new Vector2(playerDir * dashVelocity, 0);
+            return; // if dash hasn't ended -> early return
+        }
 
+        rb.linearVelocityX = xAxis; // xAxis value is set in Move method
+
+        // vertical(y) velocities
         if (state.isJumping)
         {
             rb.linearVelocityY = jumpVelocity;
@@ -76,7 +91,7 @@ public class PlayerController : MonoBehaviour
         else if (state.isPlunging)
         {
             rb.linearVelocityY = plungeVelocity;
-            state.isPlunging = false;
+            // state.isPlunging = false is applied in the OnLanding event
         }
     }
 
@@ -95,72 +110,56 @@ public class PlayerController : MonoBehaviour
             xAxis = input.Move.x * walkSpeed;
         }
         anim.SetFloat("Speed", Mathf.Abs(xAxis));
-        rb.linearVelocityX = xAxis;
 
-        if (xAxis < 0 && facingRight)
+        if (xAxis < 0 && playerDir > 0)
         {
             Flip();
         }
-        else if (xAxis > 0 && !facingRight)
+        else if (xAxis > 0 && playerDir < 0)
         {
             Flip();
         }
     }
 
-    private void Crouch() // TODO: animation for crouch
+    private void Crouch()
     {
         if (input.Crouch)
         {
             state.isCrouched = true;
-            anim.SetBool("Crouching", true);
             wasCrouching = true;
+            anim.SetBool("IsCrouching", true);
         }
-        // no crouch input received but character stays crouched if standing is blocked
-        else if (wasCrouching && state.ceilingHit)
+        else if (wasCrouching && state.ceilingHit) // no crouch input received but character stays crouched if standing is blocked
         {
             state.isCrouched = true; // to make sure isCrouched stays true
-            anim.SetBool("Crouching", true);
+            anim.SetBool("IsCrouching", true);
         }
         else
         {
             state.isCrouched = false;
-            anim.SetBool("Crouching", false);
             wasCrouching = false;
+            anim.SetBool("IsCrouching", false);
         }
     }
 
-    private void Dash() // TODO: fix dash
+    private void Dash()
     {
-        if (input.Dash && canDash)
+        if (input.Dash && !state.isCrouched && dashCooldownTime <= 0)
         {
-            StartCoroutine(Dashing());
+            dashCooldownTime = dashCooldown; // Start cooldown for dash
+            dashTime = dashDuration; // Start dash timer
+
+            state.isDashing = true;
+            TriggerAnimation("Dash");
         }
     }
 
-    private IEnumerator Dashing() // TODO: animation for dash
-    {
-        canDash = false;
-        state.isDashing = true;
-        // anim.SetTrigger("Dash");
-        trailRend.emitting = true;
-        rb.gravityScale = 0;
-        rb.linearVelocity = new Vector2(transform.localScale.x * dashVelocity, 0);
-        yield return new WaitForSeconds(dashTime);
-
-        // After dashing
-        trailRend.emitting = false;
-        rb.gravityScale = defaultGravity;
-        state.isDashing = false;
-        yield return new WaitForSeconds(dashCooldown);
-        canDash = true;
-    }
-
-    private void Jump() // TODO: Fix Jump Animation not triggering correctly
+    private void Jump()
     {
         if (input.JumpPressed && state.isGrounded && !state.ceilingHit && !state.isCrouched)
         {
-            anim.SetTrigger("Jump");
             state.isJumping = true;
+            TriggerAnimation("Jump");
         }
         else if (rb.linearVelocityY > 0f && input.JumpReleased)
         {
@@ -173,19 +172,33 @@ public class PlayerController : MonoBehaviour
 
     private void Falling()
     {
-        if (rb.linearVelocityY < fallingTreshold)
+        if (!state.isGrounded && rb.linearVelocityY < fallingTreshold)
         {
-            anim.SetTrigger("Fall");
             if (input.Plunge)
             {
                 state.isPlunging = true;
+                TriggerAnimation("Plunge");
+            }
+            else if (!state.isPlunging)
+            {
+                TriggerAnimation("Fall");
             }
         }
     }
 
     public void OnLanding()
     {
-        anim.SetTrigger("hitGround");
+        state.isPlunging = false;
+        TriggerAnimation("Land");
+    }
+
+    private void TriggerAnimation(string triggerName)
+    {
+        // check if the animation with the given trigger is not currently playing
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName(triggerName))
+        {
+            anim.SetTrigger(triggerName);
+        }
     }
 
     private void Flip()
@@ -194,6 +207,6 @@ public class PlayerController : MonoBehaviour
         currentScale.x *= -1;
         gameObject.transform.localScale = currentScale;
 
-        facingRight = !facingRight;
+        playerDir *= -1;
     }
 }

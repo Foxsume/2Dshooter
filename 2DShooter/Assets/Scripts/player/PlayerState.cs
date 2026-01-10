@@ -3,9 +3,7 @@ using UnityEngine.Events;
 
 public class PlayerState : MonoBehaviour
 {
-    // PlayerState holds information for both PlayerController and Weapon scripts. 
-    // On some cases PlayerStates' values are modified by PlayerController. 
-    // PlayerState itself has no access to other scripts 
+    // PlayerState is a link between PlayerController and WeaponController
 
     [Header("GroundCheck")]
     [SerializeField] private LayerMask groundLayer;
@@ -51,7 +49,7 @@ public class PlayerState : MonoBehaviour
          || Physics2D.Raycast(groundCheckPoint.position + new Vector3(-HorizontalCheck, 0, 0), Vector2.down, VerticalCheck, groundLayer))
         {
             isGrounded = true;
-            if (wasGrounded)
+            if (!wasGrounded)
             {
                 OnLandEvent.Invoke();
             }

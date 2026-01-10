@@ -42,5 +42,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: PlayerArmL
+    uniqueID: 854471843
+    locked: 0
+  - name: PlayerBody
+    uniqueID: 3856924273
+    locked: 0
+  - name: PlayerWeapon
+    uniqueID: 3903162337
+    locked: 0
+  - name: PlayerArms
+    uniqueID: 217966875
+    locked: 0
+  - name: PlayerArmR
+    uniqueID: 2402590295
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -3,9 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class QuickMenu : MonoBehaviour
 {
-    // TODO: freeze game when quick menu is open
+    public void Resume()
+    {
+        // Unfreeze the game
+        Time.timeScale = 1.0f;
+    }
 
-    public void QuitToMainMenu()
+    public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }

@@ -3,14 +3,14 @@ using UnityEngine.UI;
 
 public class GraphicsSettings : MonoBehaviour
 {
-    public Dropdown screenModeDropdown;
-    public Dropdown refreshRateDropdown;
-    public Dropdown resolutionDropdown;
-    public Dropdown qualityDropdown;
-    public Dropdown textureDropdown;
-    public Dropdown aaDropdown;
-    public Toggle vSync;
-    Resolution[] resolutions;
+    [SerializeField] private Dropdown screenModeDropdown;
+    [SerializeField] private Dropdown refreshRateDropdown;
+    [SerializeField] private Dropdown resolutionDropdown;
+    [SerializeField] private Dropdown qualityDropdown;
+    [SerializeField] private Dropdown textureDropdown;
+    [SerializeField] private Dropdown aaDropdown;
+    [SerializeField] private Toggle vSync;
+    [SerializeField] private Resolution[] resolutions;
     
     public void SetScreenMode(int screenModeIndex)
     {
@@ -33,7 +33,10 @@ public class GraphicsSettings : MonoBehaviour
 
     public void SetRefreshRate(int refreshRateIndex)
     {
-
+        if (QualitySettings.vSyncCount  == 0)
+        {
+            Application.targetFrameRate = refreshRateIndex;
+        }
     }
 
     public void SetResolution(int resolutionIndex)

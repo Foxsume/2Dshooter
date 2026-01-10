@@ -10,17 +10,19 @@ public class PlayerInputHandler : MonoBehaviour
     [SerializeField] private bool toggleSprint = false;
     [SerializeField] private bool toggleCrouch = false;
 
+    // Public properties to be used by other classes - can get the value but not set it (read but not write)
     public Vector2 Move {  get; private set; }
+
+    public bool AttackPressed { get; private set; }
+    public bool AttackHeld { get; private set; }
+    public bool AttackReleased { get; private set; }
+
     public bool JumpPressed { get; private set; }
     public bool JumpHeld { get; private set; }
     public bool JumpReleased { get; private set; }
 
     public bool Sprint { get; private set; }
     public bool Crouch { get; private set; }
-
-    public bool AttackPressed { get; private set; }
-    public bool AttackHeld { get; private set; }
-    public bool AttackReleased { get; private set; }
 
     public bool Dash { get; private set; }
     public bool Plunge { get; private set; }
@@ -32,12 +34,11 @@ public class PlayerInputHandler : MonoBehaviour
     public bool Interact { get; private set; }
     public bool Menu { get; private set; }
 
-
     // Internal states for toggling
     private bool sprintToggled = false;
     private bool crouchToggled = false;
 
-    private void Awake()
+    private void Awake() // Subscribe to Input System events
     {
         playerInput = GetComponent<PlayerInput>();
 
@@ -45,66 +46,37 @@ public class PlayerInputHandler : MonoBehaviour
         playerInput.actions["Move"].performed += ctx => Move = ctx.ReadValue<Vector2>();
         playerInput.actions["Move"].canceled += ctx => Move = Vector2.zero;
 
+        // Attack
+        playerInput.actions["Attack"].started += ctx => { AttackPressed = true; AttackHeld = true; };
+        playerInput.actions["Attack"].canceled += ctx => { AttackHeld = false; AttackReleased = true; };
+
         // Jump
-        playerInput.actions["Jump"].started += ctx => JumpPressed = true;
-        playerInput.actions["Jump"].performed += ctx => JumpHeld = true;
+        playerInput.actions["Jump"].started += ctx => { JumpPressed = true; JumpHeld = true; };
         playerInput.actions["Jump"].canceled += ctx => { JumpHeld = false; JumpReleased = true; };
 
         // Sprint
         playerInput.actions["Sprint"].started += ctx =>
         {
-            if (toggleSprint)
-            {
-                sprintToggled = !sprintToggled;
-                Sprint = sprintToggled;
-            }
-            else
-            {
-                Sprint = true;
-            }
+            if (toggleSprint) { sprintToggled = !sprintToggled; Sprint = sprintToggled; }
+            else { Sprint = true; }
         };
         playerInput.actions["Sprint"].canceled += ctx =>
         {
-            if (!toggleSprint)
-            {
-                Sprint = false;
-            }
+            if (!toggleSprint) { Sprint = false;}
         };
 
         // Crouch
         playerInput.actions["Crouch"].started += ctx =>
         {
-            if (toggleCrouch)
-            {
-                crouchToggled = !crouchToggled;
-                Crouch = crouchToggled;
-            }
-            else
-            {
-                Crouch = true;
-            }
+            if (toggleCrouch) { crouchToggled = !crouchToggled; Crouch = crouchToggled; }
+            else { Crouch = true; }
         };
         playerInput.actions["Crouch"].canceled += ctx =>
         {
-            if (!toggleCrouch)
-            {
-                Crouch = false;
-            }
+            if (!toggleCrouch) { Crouch = false; }
         };
 
-        // Attack
-        playerInput.actions["Attack"].started += ctx =>
-        {
-            AttackPressed = true;
-            AttackHeld = true;
-        };
-        playerInput.actions["Attack"].canceled += ctx =>
-        {
-            AttackHeld = false;
-            AttackReleased = true;
-        };
-
-        // One-shot actions
+        // Misc One-shot actions
         playerInput.actions["Dash"].performed += ctx => Dash = true;
         playerInput.actions["Plunge"].performed += ctx => Plunge = true;
         playerInput.actions["Primary"].performed += ctx => Primary = true;
@@ -116,13 +88,19 @@ public class PlayerInputHandler : MonoBehaviour
         playerInput.actions["Menu"].performed += ctx => Menu = true;
     }
 
-    private void LateUpdate()
+    private void LateUpdate() // Ensure actions are triggered only once per press
     {
-        // Reset one-shot inputs here
-        Dash = false;
-        Plunge = false;
+        // Reset attack state tracking
         AttackPressed = false;
         AttackReleased = false;
+
+        // Reset jump state tracking
+        JumpPressed = false;
+        JumpReleased = false;
+
+        // Reset misc one-shot inputs here
+        Dash = false;
+        Plunge = false;
         Primary = false;
         Secondary = false;
         Melee = false;
@@ -130,9 +108,5 @@ public class PlayerInputHandler : MonoBehaviour
         Holster = false;
         Interact = false;
         Menu = false;
-
-        // Reset jump state tracking
-        JumpPressed = false;
-        JumpReleased = false;
     }
 }
