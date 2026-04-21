@@ -1,3 +1,5 @@
 *.so filter=lfs diff=lfs merge=lfs -text
 *.bundle filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/**/*.so filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/**/*.bundle filter=lfs diff=lfs merge=lfs -text
 *.dll filter=lfs diff=lfs merge=lfs -text
