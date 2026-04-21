@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "365429105587",
+    "firebase_url": "https://shadowcommando-7186e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "shadowcommando-7186e",
+    "storage_bucket": "shadowcommando-7186e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365429105587:android:95b48389f65422281961c6",
+        "android_client_info": {
+          "package_name": "com.MistGames.ShadowCommando"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUDV4WwL0ch-0JaJLJtU_fvSIOYnAN72s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

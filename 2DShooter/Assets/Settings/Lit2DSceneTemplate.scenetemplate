@@ -11,7 +11,7 @@ Texture2D:
     serializedVersion: 2
     Hash: 3eb422a44b812e16b34078a6083bea48
   m_IsAlphaChannelOptional: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Width: 1068
   m_Height: 615
   m_CompleteImageSize: 1970460
@@ -122,6 +122,8 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 7690200709974216260, guid: 0a04f1126375af1439192c2b4df99fc0, type: 3}
     instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 2c1cb11baa5d9f44c899d6694ade224e, type: 2}
+    instantiationMode: 0
   - dependency: {fileID: 4816669225887690210, guid: a8df9ce4572308e4ea30d237bf1e3bea, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 7400000, guid: e36d01fe135d77348882cd696dd0c7a8, type: 2}
@@ -140,8 +142,6 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 6680292650503350822, guid: f25dcd618d3acd64795bf8bb32edb6c9, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 32b23d5d74f3aee4f9364e34e2f59379, type: 3}
-    instantiationMode: 1
   - dependency: {fileID: -944628639613478452, guid: 7dead05c54ca85b4681351aafd8bd03a, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 40265a896a0f341bb956e90c59025a29, type: 3}
@@ -162,6 +162,8 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 55f5e23604ff9d14dbde133d70cf9851, type: 3}
     instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 4b06738d9d89c5b43bd85b20039bbe4e, type: 2}
+    instantiationMode: 0
   - dependency: {fileID: 9100000, guid: 5c68fc1749d157049b30cdf69bfa7acd, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 6200000, guid: 74c2b3a696f061940aebf7ad7776fe85, type: 2}
@@ -178,8 +180,6 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 57da91ef0c2a5489891995dc81537253, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 7400000, guid: 807d6588898491a499710af83a183a95, type: 2}
-    instantiationMode: 0
   - dependency: {fileID: 2747951459126121722, guid: 4d1d6269b54e2ba4283ed83374d152dd, type: 3}
     instantiationMode: 0
   templatePipeline: {fileID: 0}
